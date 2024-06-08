@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
-pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR'  # Update the path according to your system
+pytesseract.pytesseract.tesseract_cmd = 'your path'  
 
 def extract_text_from_images(pdf_path):
     text = ""
