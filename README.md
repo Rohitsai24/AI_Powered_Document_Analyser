@@ -1,4 +1,4 @@
-                                                                                AI Powered Document Analyzer
+                                                              AI Powered Document Analyzer
 
 
 This repository contains a Streamlit application that utilizes AI models to extract and analyze text from PDF documents. The application allows users to upload PDF files, process them to extract text, and then query the content using natural language questions. 
