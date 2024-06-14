@@ -1,44 +1,79 @@
-AI POWERED DOCUMENT ANALYSER
+# AI Powered Document Analyser
 
+Welcome to the AI Powered Document Analyser repository! This Streamlit application leverages cutting-edge AI models to extract and analyze text from PDF documents. With this tool, users can upload PDF files, process them to extract text, and query the content using natural language questions. The answers are generated based on the content extracted from the PDFs, utilizing Optical Character Recognition (OCR) for text detection in images embedded within the PDFs.
 
-This repository contains a Streamlit application that utilizes AI models to extract and analyze text from PDF documents. The application allows users to upload PDF files, process them to extract text, and then query the content using natural language questions. 
-The answers are generated based on the content extracted from the PDFs.The application is integrated using the ocr(Optical character recognition) which is used in detecting the text on the images of the pages in the pdfs.
+## ✨ Features
 
+1. **PDF Text Extraction**: Extract text from PDF files, including text embedded in images using OCR.
+2. **Text Chunking**: Split the extracted text into manageable chunks for processing.
+3. **Vector Store Creation**: Generate vector embeddings for text chunks and store them using FAISS (Facebook AI Similarity Search).
+4. **Conversational AI**: Answer user queries based on the context extracted from the uploaded PDFs using Google's Generative AI models.
+5. **Streamlit Interface**: A user-friendly web interface to upload PDFs and ask questions.
 
-Features
+## 🛠 Requirements
 
-1.PDF Text Extraction: Extract text from PDF files, including text embedded in images using OCR (Optical Character Recognition).
+- Python 3.8+
+- Streamlit
+- PyPDF2
+- Langchain
+- pytesseract
+- FAISS
+- dotenv
 
-2.Text Chunking: Split the extracted text into manageable chunks for processing.
+## ⚙️ Setup
 
-3.Vector Store Creation: Generate vector embeddings for text chunks and store them using FAISS (Facebook AI Similarity Search).
+### Prerequisites
 
-4.Conversational AI: Answer user queries based on the context extracted from the uploaded PDFs using Google's Generative AI models.
+1. **Tesseract OCR**: Install Tesseract OCR on your system. Follow the instructions on the [official Tesseract GitHub](https://github.com/tesseract-ocr/tesseract) for installation.
+2. **Google API Key**: Obtain a Google API Key to use Google's Generative AI models. Set this key in your environment variables.
 
-5.Streamlit Interface: A user-friendly web interface to upload PDFs and ask questions.
+### Installation Steps
 
-Requirements
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-repo/ai-powered-document-analyser.git
+    cd ai-powered-document-analyser
+    ```
 
-1.Python 3.8+
+2. **Install the required Python packages**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2.Streamlit
+3. **Set up the environment variables**:
+    Create a `.env` file in the root directory of the project and add your Google API Key:
+    ```env
+    GOOGLE_API_KEY=your_google_api_key
+    ```
 
-3.PyPDF2
+4. **Run the Streamlit application**:
+    ```bash
+    streamlit run app.py
+    ```
 
-4.Langchain
+## 🚀 Usage
 
-5.pytesseract
+1. Open the Streamlit application in your browser.
+2. Upload a PDF file through the interface.
+3. Ask questions related to the content of the PDF.
+4. Receive answers generated based on the extracted text from the PDF.
 
-6.FAISS
+## 🤝 Contributions
 
-7.dotenv
+We welcome contributions! Please fork the repository and submit a pull request for any enhancements, bug fixes, or new features.
 
-Setup
+## 📜 License
 
-Prerequisites
+This project is licensed under the MIT License.
 
-Tesseract OCR: Install Tesseract OCR on your system. Follow the instructions on the official Tesseract GitHub for installation.
+---
 
-Google API Key: Obtain a Google API Key to use Google's Generative AI models. Set this key in your environment variables.
+Enhance your document analysis capabilities with our AI Powered Document Analyser. Happy analyzing! 🎉
 
-Intially we have to setup the google api key in the .env file so that it will be able to generate the content.Otherwise it will give key missing error.
+---
+
+For more information, visit the [official documentation](https://github.com/your-repo/ai-powered-document-analyser). If you encounter any issues, please open an issue on GitHub.
+
+---
+
+**Contact**: For any inquiries, please email us at support@yourdomain.com.
