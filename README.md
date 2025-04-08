@@ -62,18 +62,3 @@ Welcome to the AI Powered Document Analyser repository! This Streamlit applicati
 
 We welcome contributions! Please fork the repository and submit a pull request for any enhancements, bug fixes, or new features.
 
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-Enhance your document analysis capabilities with our AI Powered Document Analyser. Happy analyzing! 🎉
-
----
-
-For more information, visit the [official documentation](https://github.com/your-repo/ai-powered-document-analyser). If you encounter any issues, please open an issue on GitHub.
-
----
-
-**Contact**: For any inquiries, please email us at support@yourdomain.com.
